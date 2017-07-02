@@ -6,7 +6,7 @@
     "publisher": "nodeogre",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/reidytech/vismacro"
+		"url": "https://github.com/reidytech/vismacro.git"
 	},
     "engines": {
         "vscode": "^1.13.0"

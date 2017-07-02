@@ -1,0 +1,41 @@
+{
+    "name": "cursorstartline",
+    "displayName": "cursorstartline",
+    "description": "Simple extension that moves your cursor down and to the beginning of the line; to my knowledge it is not possible to combine commands in the keybindings.json extension.",
+    "version": "0.0.1",
+    "publisher": "nodeogre",
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+    "categories": [
+        "Other"
+    ],
+   "main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.cursorStartLine",
+				"title": "Cursor Start Line",
+				"description": "Moves cursor down and to right, meshing two keybinding commands"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.cursorStartLine",
+				"key": "cmd+ctrl+space"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+    "devDependencies": {
+        "vscode": "^1.0.0"
+    },
+	"activationEvents": [
+		"onCommand:extension.cursorStartLine"
+	]
+}
+

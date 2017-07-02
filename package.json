@@ -4,6 +4,10 @@
     "description": "Simple extension that moves your cursor down and to the beginning of the line; to my knowledge it is not possible to combine commands in the keybindings.json extension.",
     "version": "0.0.1",
     "publisher": "nodeogre",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/reidytech/vismacro"
+	},
     "engines": {
         "vscode": "^1.13.0"
     },
